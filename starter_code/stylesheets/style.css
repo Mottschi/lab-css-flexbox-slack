@@ -196,6 +196,7 @@ main section a {
     line-height: 4rem;
 }
 
+
 main .meet {
     background-color: white;
     display: flex;
@@ -378,10 +379,26 @@ footer > .site-options > li:last-child {
     color:#2E71A6;
 }
 
+
+/* Note: To make the icons work, I had to change the imported version of the 
+font awesome library */
 footer > .site-options > li:last-child::before {
-    font-family: FontAwesome;
-    content: '\f019';
+    font: var(--fa-font-solid);
+    content: "\f0ed";
+    padding-right: 0.5rem;
 }
+
+footer > .site-options > li:nth-last-child(2)::before {
+    font: var(--fa-font-solid);
+    content: "\f0ac";
+    padding-right: 0.5rem;
+}
+
+main section a::after {
+    font: var(--fa-font-solid);
+    content: '\f061';
+}
+
 
 footer > ul.social {
     display: flex;
