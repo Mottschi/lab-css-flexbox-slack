@@ -8,3 +8,212 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    color: white;
+    background-color: #540B51;
+    justify-content: space-between;
+    height: 5rem;
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+}
+
+nav img[src*='logo'] {
+    height: 1.5rem;
+    padding-left: 2rem;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    padding-left: 2rem;
+    display: none;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-options {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.nav-options button {
+    border: none;
+    background-color: #540B51;
+}
+
+header {
+    background-color: #540B51;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+header > div  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header p {
+    margin: 1rem 0;
+}
+
+header button {
+    width: 90%;
+    margin: 0.3rem;
+    height: 2.5rem;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+header button img {
+    height: 1.8rem;
+    position: absolute;
+    left: 1rem;
+    top: 0.4rem;
+    background-color: white;
+    border-radius: 2px;
+}
+
+header button:nth-child(2) {
+    background-color: #4285F4;
+    border: none;
+    border-radius: 2px;
+    color: white;
+
+}
+
+header > div > div {
+    text-align: center;
+}
+
+header .paragraph-yellow {
+    color: #ECB12F;
+}
+
+/* Picture size still needs to be changed */
+header .app-screen img {
+}
+
+main {
+    background-color: #F3EAE2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+main > .companies img {
+    height: 1.4rem;
+    margin: 1rem 0.5rem;
+}
+
+main .companies p {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    text-align: center;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+ .connect img,  .flexible img, .more img {
+    width: 100vw;
+    overflow: hidden;
+}
+
+main .meet {
+    background-color: white;
+}
+
+main .contact {
+    background-color: #540B51;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: #454245;
+    gap: 1rem;
+}
+
+footer img[alt='Slack logo'] {
+    height: 2.2rem;
+    width: 2.2rem;
+    margin: 1rem;
+}
+
+footer .list-container {
+    display: flex;
+    font-size: 0.6rem;
+}
+
+footer .list-container ul {
+    list-style: none;
+}
+
+footer .list-container li {
+    margin: 0.7rem;
+    font-weight: 300;
+}
+
+footer .list-container li:first-child {
+    font-weight: 900;
+    margin-bottom: 1rem;
+    height: 1.5rem;
+}
+
+footer ul.site-options {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30vh;
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+footer > ul.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60%;
+    list-style-type: none;
+}
+
+.footer-divider {
+    display: none;
+}
+
+footer i {
+    color: black;
+}
+
+.copyright {
+    font-size: 0.7rem;
+    font-weight: 300;
+}
