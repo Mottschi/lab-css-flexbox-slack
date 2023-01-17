@@ -10,10 +10,12 @@ footer links grey: #454245
 */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+Display');
 
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
 }
 
 body {
@@ -78,6 +80,14 @@ header > div  {
     justify-content: center;
 }
 
+header > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 header p {
     margin: 1rem 0;
 }
@@ -85,18 +95,20 @@ header p {
 header button {
     width: 90%;
     margin: 0.3rem;
-    height: 2.5rem;
-    position: relative;
+    height: 3rem;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header button img {
-    height: 1.8rem;
+    height: 2rem;
+    width: 2rem;
     position: absolute;
-    left: 1rem;
-    top: 0.4rem;
+    left: 2rem;
     background-color: white;
     border-radius: 2px;
 }
@@ -122,6 +134,8 @@ header p {
 
 /* Picture size still needs to be changed */
 header .app-screen img {
+    
+
 }
 
 main {
@@ -129,7 +143,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 2rem 0;
 }
 
 main > .companies img {
@@ -148,6 +162,16 @@ main .companies p {
  .connect img,  .flexible img, .more img {
     width: 100vw;
     overflow: hidden;
+}
+
+.connect img, .more img {
+    position: relative;
+    right: 1rem;
+}
+
+.flexible img {
+    position: relative;
+    left: 1rem;
 }
 
 .connect {
@@ -177,7 +201,10 @@ main .meet {
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
+    padding-bottom: 2rem;
 }
 
 main .more {
@@ -185,11 +212,6 @@ main .more {
     flex-direction: column;
 }
 
-main .contact {
-    background-color: #540B51;
-    display: flex;
-    flex-direction: column;
-}
 
 .flexible {
     display: flex;
@@ -202,12 +224,23 @@ main .contact {
 
 .meet h3 {
     padding: 2rem 0 0;
+    font-size: 1.8rem;
+    font-weight: 900;
+    width: 80%;
 }
 
 .meet ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.meet li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -215,18 +248,26 @@ main .contact {
     color:#540B51;
     font-size: 2.5rem;
     font-weight: 700;
+    padding: 0;
 }
 
-.meet li p {
+.meet li p:nth-child(2) {
     color: black;
     font-size: 0.7rem;
     font-weight: 900;
+    width: 60%;
+    padding: 0;
 }
 
 .meet > div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 95%;
+}
+
+.meet > p {
+    width: 100%;
 }
 
 .meet button {
@@ -248,6 +289,44 @@ main .contact {
     border: solid thin;
 }
 
+main .contact {
+    background-color: #540B51;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 3rem 0.8rem 2.5rem;
+}
+
+.contact h3 {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.contact button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+}
+
+.contact button:nth-of-type(2) {
+    color: white;
+    background-color: #540B51;
+    order: 2;
+}
+
+.contact button:nth-of-type(1) {
+    color:#540B51;
+    background-color: white;
+    order: 3;
+}
+
+
+
 footer {
     display: flex;
     flex-direction: column;
@@ -260,11 +339,13 @@ footer img[alt='Slack logo'] {
     height: 2.2rem;
     width: 2.2rem;
     margin: 1rem;
+    order: 1;
 }
 
 footer .list-container {
     display: flex;
     font-size: 0.6rem;
+    order: 2;
 }
 
 footer .list-container ul {
@@ -290,6 +371,16 @@ footer ul.site-options {
     height: 30vh;
     font-size: 0.6rem;
     font-weight: 600;
+    order: 4;
+}
+
+footer > .site-options > li:last-child {
+    color:#2E71A6;
+}
+
+footer > .site-options > li:last-child::before {
+    font-family: FontAwesome;
+    content: '\f019';
 }
 
 footer > ul.social {
@@ -298,10 +389,12 @@ footer > ul.social {
     justify-content: space-between;
     height: 60%;
     list-style-type: none;
+    order: 5;
 }
 
 .footer-divider {
-    display: none;
+    border-color: gray;
+    order: 3;   
 }
 
 footer i {
@@ -311,4 +404,5 @@ footer i {
 .copyright {
     font-size: 0.7rem;
     font-weight: 300;
+    order: 6;
 }
