@@ -8,6 +8,7 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+Display');
 
 * {
     box-sizing: border-box;
@@ -16,7 +17,7 @@ footer links grey: #454245
 }
 
 body {
-    font-family: sans-serif;
+    font-family: Noto Sans Display, sans-serif;
 }
 
 nav {
@@ -88,6 +89,7 @@ header button {
     position: relative;
     text-transform: uppercase;
     font-size: 0.8rem;
+    font-weight: 600;
 }
 
 header button img {
@@ -111,8 +113,11 @@ header > div > div {
     text-align: center;
 }
 
-header .paragraph-yellow {
-    color: #ECB12F;
+header p {
+    display: inline-block;
+    background: linear-gradient(to right, #ECB12F 45%, #FFF 45%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Picture size still needs to be changed */
