@@ -145,12 +145,102 @@ main .companies p {
     overflow: hidden;
 }
 
+.connect {
+    display: flex;
+    flex-direction: column;
+}
+
+main section h2 {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+main section p {
+    padding: 1rem;
+}
+
+main section a {
+    padding: 1rem;
+    text-decoration: none;
+    color: #2E71A6;
+    margin: 1rem 0 2rem;
+    line-height: 4rem;
+}
+
 main .meet {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+}
+
+main .more {
+    display: flex;
+    flex-direction: column;
 }
 
 main .contact {
     background-color: #540B51;
+    display: flex;
+    flex-direction: column;
+}
+
+.flexible {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-first {
+    order: -1;
+}
+
+.meet h3 {
+    padding: 2rem 0 0;
+}
+
+.meet ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meet li span {
+    color:#540B51;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.meet li p {
+    color: black;
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+
+.meet > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meet button {
+    border-radius: 2px;
+    width: 95%;
+    height: 2.5rem;
+    text-transform: uppercase;
+    margin: 0.5rem;
+}
+
+.meet button:first-of-type {
+    background-color: #540B51;
+    color: white;
+    border: none;
+}
+.meet button:nth-of-type(2) {
+    background-color: white;
+    color: #540B51;
+    border: solid thin;
 }
 
 footer {
