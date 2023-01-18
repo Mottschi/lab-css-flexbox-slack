@@ -154,9 +154,11 @@ header > div > div {
 
 header p {
     display: inline-block;
-    background: linear-gradient(to right, #ECB12F 15rem, #FFF 15rem);
+    background: linear-gradient(to right, #ECB12F 8rem, #FFF 8rem);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 /* TODO: Picture size still needs to be 
