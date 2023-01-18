@@ -52,8 +52,19 @@ nav a {
     text-decoration: none;
 }
 
-nav:has(.menu-icon:hover) .menu, .menu:hover {
-    visibility: visible;
+.menu {
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+    background-color: blue;
+    color: black;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.nav-options:has(.menu-icon:hover) .menu, .menu:hover {
+    background-color: red;
+    display: flex
 }
 
 .nav-options {
