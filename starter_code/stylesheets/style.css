@@ -52,6 +52,10 @@ nav a {
     text-decoration: none;
 }
 
+nav:has(.menu-icon:hover) .menu, .menu:hover {
+    visibility: visible;
+}
+
 .nav-options {
     display: flex;
     justify-content: space-around;
