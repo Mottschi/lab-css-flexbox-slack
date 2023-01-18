@@ -9,7 +9,8 @@
   <!-- link the Font Awesome stylesheet - CDN -->
   <!-- <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" /> -->
 
-  <!-- While we were not supposed to edit the html, I was -->
+  <!-- While we were not supposed to edit the html, I was unable to get font awesome to work from css 
+    with the original import, so added a newer version -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- link your styles -->
@@ -49,7 +50,7 @@
         <img class="menu-icon" src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
-      <ul hidden class="menu">
+      <ul hidden id="menu">
         <li>
           <a href="#" class="link-login">Sign in</a>
         </li>
