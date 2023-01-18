@@ -60,6 +60,7 @@ nav #menu {
     border: 1px solid black;
     padding: 1rem;
     display:none;
+    border-radius: 2px;
 }
 
 nav #menu a {
@@ -152,7 +153,7 @@ header > div > div {
 
 header p {
     display: inline-block;
-    background: linear-gradient(to right, #ECB12F 45%, #FFF 45%);
+    background: linear-gradient(to right, #ECB12F 15rem, #FFF 15rem);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
