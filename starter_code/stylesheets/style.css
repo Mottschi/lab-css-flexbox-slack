@@ -450,9 +450,10 @@ footer i {
     order: 6;
 }
 
-@media (width < 300) {
+
+@media (width < 300px) {
     header p {
-        display: none;
+        background:#540B51;
+        -webkit-text-fill-color: unset;
     }
-    
 }
