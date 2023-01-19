@@ -449,3 +449,10 @@ footer i {
     font-weight: 300;
     order: 6;
 }
+
+@media (width < 300) {
+    header p {
+        display: none;
+    }
+    
+}
