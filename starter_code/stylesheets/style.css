@@ -151,17 +151,11 @@ header > div > div {
 header p {
     display: inline-block;
     background: linear-gradient(to right, #ECB12F 8rem, #FFF 8rem);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0 auto;
     width: fit-content;
-}
-
-/* TODO: Picture size still needs to be 
-changed and picture placement adjusted */
-header .app-screen img {
-    
-
 }
 
 main {
@@ -455,5 +449,38 @@ footer i {
     header p {
         background:#540B51;
         -webkit-text-fill-color: unset;
+    }
+}
+
+@media (width > 768px) {
+    header {
+        flex-direction: row;
+        padding-bottom: 8rem;
+    }
+
+    header img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    header .teamwork {
+        flex: 2 1;
+        text-align: left;
+    }
+
+    header .teamwork p {
+        margin: 2rem;
+    }
+
+    header .teamwork h1 {
+        font-size: 5rem;
+        margin: 2rem;
+        width: 80%;
+    }
+
+    
+
+    header .app-screen {
+        flex: 1 1;
     }
 }
